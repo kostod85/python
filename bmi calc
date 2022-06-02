@@ -1,5 +1,4 @@
 import math
-import string
 
 m = float(input('Вевдите свой вес '))
 l = float(input('Введите свой рост '))
@@ -8,5 +7,3 @@ print('Ваш индекс массы тела ')
 print( bmi)
 if bmi < 20.0:
     print(" ты дрищ толстей")
-
-       
