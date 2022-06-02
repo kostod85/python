@@ -1,0 +1,3 @@
+string ='хуй в жопе у влада'
+x = len(string)
+print(string[0:int(x/2)])
