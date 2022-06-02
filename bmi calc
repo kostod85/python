@@ -1,7 +1,6 @@
 import math
 import string
 
-
 m = float(input('Вевдите свой вес '))
 l = float(input('Введите свой рост '))
 bmi = (m / ( l ** 2 ))*10000
