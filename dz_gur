@@ -4,3 +4,9 @@ print(null)
 #2 answer
 null_2 = 0 and 0 and False and 0
 print(null_2)
+#3 answer 
+a = int(input('введите первое число '))
+b = int(input('введите второе число '))
+с = int(input('введите третье число '))
+if a > b + с:
+    print( a + b + с )
