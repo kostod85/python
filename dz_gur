@@ -1,1 +1,6 @@
-print("ну вроде как работает")
+#1 answer 
+null = 7 and 1 and 3 and "нет нулей"
+print(null)
+#2 answer
+null_2 = 0 and 0 and False and 0
+print(null_2)
