@@ -1,4 +1,7 @@
 #1 answer 
+from calendar import c
+
+
 null = 7 and 1 and 3 and "нет нулей"
 print(null)
 #2 answer
@@ -7,6 +10,9 @@ print(null_2)
 #3 answer 
 a = int(input('введите первое число '))
 b = int(input('введите второе число '))
-с = int(input('введите третье число '))
-if a > b + с:
-    print( a + b + с )
+c = int(input('введите третье число '))
+if a > b + c:
+    print( a + b + c )
+#4 answer
+if a < b + c:
+    print(b + c - a)
