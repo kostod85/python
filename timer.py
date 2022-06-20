@@ -1,7 +1,6 @@
 from datetime import datetime
 import os
 import time
-
 from pyrsistent import s
 
 нуль = ["■ □ □ □ □ ■",
@@ -108,7 +107,6 @@ dct = {'0': нуль,
 while True:
     string = datetime.now().strftime("%H:%M:%S")
     watch = []
-    os.system('cls' )
     for x in string:
         if x in dct.keys():
             watch.append(dct[x])
@@ -120,6 +118,7 @@ while True:
     print(watch[0][5] + watch[1][5] + watch[2][5] + watch[3][5] + watch[4][5] + watch[5][5] + watch[6][5] + watch[7][5])
     print(watch[0][6] + watch[1][6] + watch[2][6] + watch[3][6] + watch[4][6] + watch[5][6] + watch[6][6] + watch[7][6])
     time.sleep(1)
+    os.system('cls')
      
 
 #print(read_file()[11])
