@@ -25,21 +25,24 @@ while True:
             x_mouse, y_mouse = pygame.mouse.get_pos()
             col = x_mouse // (size_block + margin)
             row = y_mouse // (size_block + margin)
-            #if query % 2 == 0:
-            mas[row][col] = 'x'
-            #else:
-            #    mas[row][col] = 'o'
-            #query += 1
+            if mas[row][col] == 0:
+                if query % 2 == 0:
+                    mas[row][col] = 'x'
+                else:
+                    mas[row][col] = 'o'
+                query += 1
 
     for row in range(3):
         for col in range(3):
             if mas[row][col] == 'x':
                 color = red
-            #elif mas[row][col] == 'o':
-               # color = green
+            elif mas[row][col] == 'o':
+                color = green
             else:
                 color = white
             x = col * size_block + (col + 1) * margin
             y = row * size_block + (row + 1) * margin
-            pygame.draw.rect(screen, white, (x, y, size_block, size_block))
+            pygame.draw.rect(screen, color, (x, y, size_block, size_block))
+            #if color == red:
+                #pygame.draw.line(screen, white)
     pygame.display.update()
